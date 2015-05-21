@@ -1,11 +1,14 @@
 [
-    "index.md",
     "docker.html",
     "what-is-docker.html",
+    "purpose.html",
     "quest-ce-quun-container.html",
     "et-le-devops-dans-tout-ca.html",
-    "components.html",
+    "container-vs-vm.html",
     "first-container.html",
     "images.html",
-    "container.html"
+    "container.html",
+    "registry.html",
+    "example-wordpress.html",
+    "whats-next.html"
 ]
