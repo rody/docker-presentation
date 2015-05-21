@@ -1,0 +1,9 @@
+{
+  "generator-reveal": {
+    "presentationTitle": "Docker",
+    "packageVersion": "0.0.1",
+    "revealTheme": "beige",
+    "useSass": false,
+    "deployToGithubPages": false
+  }
+}
