@@ -1,4 +1,3 @@
-
 # Docker
 
 From the terminal, pop in:

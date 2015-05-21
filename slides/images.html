@@ -1,0 +1,39 @@
+<section>
+  <h1>Images</h1>
+
+  <h3>Ce sont des 'templates' de containers en lecture seule</h3>
+
+  <p>récuperer une image depuis un registry</p>
+  <pre><code class="bash">docker pull NAME[:TAG]</code></pre>
+
+  <p>pousser une image sur le registry</p>
+  <pre><code class="bash">docker push NAME:[TAG]</code></pre>
+
+  <p>construire une image à partir d'un fichier <code>Dockerfile</code></p>
+  <pre><code class="bash">docker build .</code></pre>
+
+  <p>construire une image à partir d'un container</p>
+  <pre><code class="bash">docker commit CONTAINER [REPOSITORY][:TAG]</code></pre>
+</section>
+
+<section>
+  <h2>Dockerfile</h2>
+
+  <pre><code class="bash">FROM ubuntu:14.04             # hérite d'une image de base
+
+RUN apt-get update && \       # installation des dépendances
+  apt-get install -y couchdb pwgen && \
+  apt-get clean && \
+  rm -rf /var/lib/apt/lists/*
+
+RUN mkdir /var/run/couchdb
+ADD run.sh /run.sh && chmod 755 /*.sh
+
+EXPOSE 5984                   # info sur le port 'exposable'
+VOLUME ["/var/lib/couchdb"]   # création d'un volume
+CMD ["/run.sh"]   # la commande lancée lorsque que le container démarre
+  </code></pre>
+
+  <p>construire l'image</p>
+  <pre><code class="bash">docker build -t my_couchdb .</code></pre>
+</section>

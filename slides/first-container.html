@@ -1,0 +1,41 @@
+<section>
+  <h2>Mon premier container</h2>
+
+  <p>&nbsp;</p>
+  <pre><code>docker run -p 5984:5984 tutum/couchdb</code></pre>
+  <p>&nbsp;</p>
+
+  <p>Lance un container à partir de l'image 'tutum/couchdb' et mappe le port 5984 du container sur le port 5984 de l'hôte</p>
+  <p>&nbsp;</p>
+
+  <pre><code>
+  => Waiting for confirmation of CouchDB service startup
+  Apache CouchDB 1.5.0 (LogLevel=info) is starting.
+  Apache CouchDB has started. Time to relax.
+  [info] [<0.32.0>] Apache CouchDB has started on http://0.0.0.0:5984/
+  [info] [<0.107.0>] 127.0.0.1 - - GET / 200
+  => Creating an admin user with a random password in CouchDB
+  [info] [<0.108.0>] 127.0.0.1 - - PUT /_config/admins/admin 200
+  ""
+  => Done!
+  </code></pre>
+</section>
+
+<section data-background="img/x-or-anim2.gif">
+  <h2 style="color: white;">Revoyons la scène au ralenti...</h2>
+</section>
+
+<section>
+  <h2>Etapes de la création d'un container</h2>
+  <p>&nbsp;</p>
+  <pre><code>docker run -p 5984:5984 tutum/couchdb</code></pre>
+  <p>&nbsp;</p>
+  <ol>
+    <li class="fragment">L'image <code>tutum/couchdb</code> est récupérée depuis le registry global</li>
+    <li class="fragment">un container est créé à partir de l'image</li>
+    <li class="fragment">le port 5984 est mappé sur l'hôte</li>
+    <li class="fragment">le container est démarré</li>
+  </ol>
+
+</section>
+

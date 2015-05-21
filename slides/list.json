@@ -1,1 +1,11 @@
-["index.md"]
+[
+    "index.md",
+    "docker.html",
+    "what-is-docker.html",
+    "quest-ce-quun-container.html",
+    "et-le-devops-dans-tout-ca.html",
+    "components.html",
+    "first-container.html",
+    "images.html",
+    "container.html"
+]

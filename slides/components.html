@@ -1,0 +1,33 @@
+<section>
+  <h2>les composants de docker</h2>
+  <ul>
+    <li>Images (Build)</li>
+    <li>Registry (Ship)</li>
+    <li>Container (Run)</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Image (Build)</h2>
+  <ul>
+    <li>Elle contient un programe et ses dépendances</li>
+    <li>Elle peut être publiée sur un 'registry'</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Registry (Ship)</h2>
+  <ul>
+    <li>Stocke et distribue les images docker</li>
+    <li>un registre global est dispo à <a href="https://registry.hub.docker.com">https://registry.hub.docker.com/</a></li>
+    <li>Possibilité d'avoir un registre privé (<code>docker run registry</code>)</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Container (Run)</h2>
+  <p>Il est crée à partir d'une image</p>
+  <p>Un conteneur execute le processus défini dans l'image</p>
+  <p>Il est isolé des autres conteneurs et de l'OS hôte</p>
+  <p>Il possède sa propre configuration réseau</p>
+</section>
