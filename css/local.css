@@ -1,0 +1,73 @@
+@import url(./fontello.css);
+
+.reveal section img.title-logo {
+  border: 0;
+  box-shadow: 0 0 0 0;
+}
+
+.positive {
+  color: #E4D26C;
+  text-shadow: 0 5px 0 #080;
+  text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbbbbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaaaaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 20px 20px rgba(0, 0, 0, 0.15);
+}
+
+.neutral {
+  color: #6C7EE4;
+  text-shadow: 0 5px 0 #080;
+  text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbbbbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaaaaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 20px 20px rgba(0, 0, 0, 0.15);
+}
+
+.alert {
+  color: #DD1B16;
+  text-shadow: 0 5px 0 #080;
+  text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbbbbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaaaaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 20px 20px rgba(0, 0, 0, 0.15);
+}
+
+dl.timeline {
+  position: relative;
+  padding: 1em 0;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  text-align: left;
+}
+
+dl.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 40%;
+  height: 100%;
+  width: 14px;
+  background: #6c7ee4;
+}
+
+dl.timeline dd, dl.timeline dt {
+  margin-top: 40px;
+}
+
+dl.timeline dt {
+  color: #666;
+  display: inline-block;
+  position: relative;
+  left: 15%;
+  text-align: right;
+  width: 6em;
+}
+
+dl.timeline dd {
+  display: inline;
+  position: relative;
+  text-align: left;
+  left: 23%;
+}
+
+dl.timeline dd::after {
+  content: ' ';
+  display: block;
+  position: relative;
+}
+
+.reveal section img.raw {
+  border: 0;
+  box-shadow: 0 0 0;
+}
