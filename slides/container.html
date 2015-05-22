@@ -32,6 +32,36 @@
 </section>
 
 <section>
+  <h2>Les volumes</h2>
+  <p>Les Volumes permettent de monter un répertoire de l'hôte ou d'un autre conteneur</p>
+  <p>Ils ne sont pas versionnés</p>
+
+  <p>&nbsp;</p>
+  <pre><code class="bash">docker run -v ./my_website:/var/apache/www apache</code></pre>
+  <p>&nbsp;</p>
+</section>
+
+<section>
+  <h2>Le réseau</h2>
+  <p>Chaque container peut exposer des ports réseau vers l'extérieur</p>
+  <p>Cette exposition se fait via un NAT, il faut donc exposer un port interne du container sur un port externe</p>
+
+  <p>&nbsp;</p>
+  <pre><code class="bash">docker run -p 8080:80 -v ./my_website:/var/apache/www apache</code></pre>
+  <p>&nbsp;</p>
+</section>
+
+<section>
+  <h2>Le réseau (2)</h2>
+  <p>Il existe plusieurs options pour la gestion avancée du réseau</p>
+  <pre><code class="bash"> --dns=[]         : Set custom dns servers for the container
+  --net="none|bridge|host|container"   : Set the Network mode for the container
+  --add-host=""    : Add a line to /etc/hosts (host:IP)
+  --mac-address="" : Sets the container's Ethernet device's MAC address
+  </code></pre>
+</section>
+
+<section>
   <h2>Privilèges, capacités, ...</h2>
   <p>Par défaut, les containers son <strong>non-privilégiés</strong>.</p>
   <p>&nbsp;</p>
