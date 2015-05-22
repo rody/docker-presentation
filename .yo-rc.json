@@ -4,6 +4,8 @@
     "packageVersion": "0.0.1",
     "revealTheme": "beige",
     "useSass": false,
-    "deployToGithubPages": false
+    "deployToGithubPages": true,
+    "githubUsername": "rody",
+    "githubRepository": "docker-presentation"
   }
 }
