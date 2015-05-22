@@ -1,0 +1,55 @@
+<section>
+  <h3>(RUN)</h3>
+  <h1><span class="alert">Containers</span></h1>
+  <h3>Ce sont les unités d'éxécution</h3>
+
+  <p>&nbsp;</p>
+  <p>Ils permettent d'<strong>exécuter le processus</strong> définit dans l'image <strong>en isolation</strong> des autres containers et du l'OS hôte</p>
+  <p>&nbsp;</p>
+  <p>Un container possède:</p>
+  <ul>
+    <li>son propre filesystem</li>
+    <li>sa propre couche réseau (IP, /etc/hosts, ...)</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Création d'un container</h2>
+  <p>Un container est toujours créé à partir d'une image</p>
+  <p>&nbsp;</p>
+  <pre><code>docker run [OPTIONS] IMAGE</code></pre>
+  <p>Crée et démarre un container à partir de l'image IMAGE</p>
+</section>
+
+<section>
+  <h2>Contraintes d'éxécution</h2>
+  <p>Docker permet de controller les ressources aloués aux containers</p>
+  <ul>
+    <li><strong>Memory</strong> : Quantité de RAM</li>
+    <li><strong>Swap</strong> : Quantité de swap</li>
+    <li><strong>CPU</strong> : % de temps CPU</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Privilèges, capacités, ...</h2>
+  <p>Par défaut, les containers son <strong>non-privilégiés</strong>.</p>
+  <p>&nbsp;</p>
+  <p>Les privilèges suivants peuvent être activés</p>
+  <ul>
+    <li>Accès aux 'devices' (carte son, usb, disque,...)</li>
+    <li>Accès étendu au kernel</li>
+  </ul>
+
+  <p>&nbsp;</p>
+  <p>En mode privilégié, on peut faire tourner docker dans docker !</p>
+</section>
+
+<section data-background="img/inception.jpeg">
+  <h2 style="color:white">Docker</h2>
+  <h3 style="color:white">dans</h3>
+  <h2 style="color:white">Docker</h2>
+  <h4 style="color:white">dans</h4>
+  <h2 style="color:white">...</h2>
+</section>
+

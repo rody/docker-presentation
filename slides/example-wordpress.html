@@ -1,0 +1,41 @@
+<section>
+  <h1>Exemple: déploiement de Wordpress</h1>
+</section>
+
+<section>
+  <h2>Étape 1: Création du container MySQL</h2>
+  <pre><code class="bash">docker run -d --name some-mysql \
+  -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:5.6</code></pre>
+
+  <p>&nbsp;</p>
+  <h2>Étape 2: Création du container Wordpress</h2>
+  <pre><code class="bash">docker run --name some-wordpress \
+  --link some-mysql:mysql -p 8080:80 -d wordpress</code></pre>
+
+  <p>&nbsp;</p>
+  <h2>Done !</h2>
+</section>
+
+<section>
+  <h2>Encore plus simple avec</h2>
+  <h1>docker-compose</h1>
+</section>
+
+<section>
+  <h2>Étape 1: Création du fichier docker-compose.yml</h2>
+  <pre><code class="yaml"> wordpress:
+  image: wordpress
+  ports:
+    - "8081:80"
+  links:
+    - db:mysql
+db:
+  image: "mysql:5.6"
+  environment:
+    - MYSQL_ROOT_PASSWORD=my-secret-pw
+  </code></pre>
+  <p>&nbsp;</p>
+  <h2>Étape 2: Démarrage des containers</h2>
+  <pre><code>docker-compose up</code></pre>
+  <h3>Done !</h3>
+</section>

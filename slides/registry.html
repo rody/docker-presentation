@@ -1,0 +1,44 @@
+<section>
+  <h3>(SHIP)</h3>
+  <h1><span class="positive">Registries</span></h1>
+  <h3>Ce sont les composants de diffusion</h3>
+
+  <p>&nbsp;</p>
+  <p>Ils permettent de stocker et diffuser les <span class="neutral">images</span></p>
+  <p>&nbsp;</p>
+  <p>Chaque image est reférencé dans un registry par son <strong>NOM</strong> et un <strong>TAG</strong></p>
+</section>
+
+<section>
+  <h1>Interaction avec un registre</h1>
+  <p>&nbsp;</p>
+  <p>Récupérer une image depuis un registre</p>
+  <pre><code>docker pull [IMAGE][:TAG]</code></pre>
+  <p>&nbsp;</p>
+  <p>publier une image sur un registre</p>
+  <pre><code>docker push [IMAGE][:TAG]</code></pre>
+</section>
+
+<section>
+  <h1>Versionning des images</h1>
+
+  <p>Le <strong>TAG</strong> peut s'apparenter à un numéro de version, et permet d'identifier l'image de manière unique</p>
+
+  <p>&nbsp;</p>
+  <p>ex: les images officielles MongoDB</p>
+  <ul>
+    <li>mongo:<strong>2.2</strong></li>
+    <li>mongo:<strong>2.2.7</strong></li>
+    <li>mongo:<strong>3.0.3</strong></li>
+    <li>mongo:<strong>latest</strong></li>
+  </ul>
+</section>
+
+<section>
+  <h1>Le registre global</h1>
+  <p>Docker maintient un registre global</p>
+  <h2><a href="ihttps://registry.hub.docker.com/">https://registry.hub.docker.com/</a></h2>
+  <p>C'est de ce registre que les images sont téléchargée par défaut</p>
+</section>
+
+
